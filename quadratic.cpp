@@ -10,15 +10,6 @@
 #include <cmath>
 
 /**
- * Custom Quadratic Discriminant Exception
- */
-struct DiscriminantException: public std::exception {
-	const char * what() const throw() {
-		return "DiscriminantException::NEGATIVE_SQUARE_ROOT";
-	}
-};
-
-/**
  * Quadratic Formula constructor
  * @param {float} a - The quadratic var a
  * @param {float} b - The quadratic var b
